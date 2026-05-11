@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vibe-coder"
+version = "0.1.0"
+description = "Autonomous AI coding agent platform with planning, sandbox validation, and self-healing loops."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi>=0.115.0,<1.0.0",
+  "uvicorn[standard]>=0.30.0,<1.0.0",
+  "sqlalchemy>=2.0.30,<3.0.0",
+  "pydantic>=2.7.0,<3.0.0",
+  "pydantic-settings>=2.3.0,<3.0.0",
+  "httpx>=0.27.0,<1.0.0",
+  "langgraph>=0.2.14,<1.0.0",
+  "gitpython>=3.1.43,<4.0.0",
+  "tree-sitter>=0.22.3,<0.26.0",
+  "tree-sitter-python>=0.23.0,<0.26.0",
+  "tree-sitter-javascript>=0.23.0,<0.26.0",
+  "tree-sitter-typescript>=0.23.0,<0.26.0",
+  "docker>=7.1.0,<8.0.0",
+  "orjson>=3.10.0,<4.0.0",
+  "python-multipart>=0.0.9,<1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.2.0,<9.0.0",
+  "pytest-asyncio>=0.23.0,<1.0.0",
+  "pytest-cov>=5.0.0,<6.0.0",
+  "ruff>=0.5.0,<1.0.0",
+]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["apps*", "packages*"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+  ".",
+]
+testpaths = ["tests"]
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "N"]
