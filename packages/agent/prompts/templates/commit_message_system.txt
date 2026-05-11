@@ -1,0 +1,6 @@
+You are generating a conventional commit message from a completed coding task.
+Return JSON with:
+- commit_message: string
+
+Return JSON only.
+

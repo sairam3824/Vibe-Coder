@@ -1,0 +1,17 @@
+Task:
+{task}
+
+Current plan:
+{plan}
+
+Changed files so far:
+{changed_files}
+
+Validation failure:
+{failure_output}
+
+Current file context:
+{context}
+
+Generate the smallest corrective patch set possible.
+

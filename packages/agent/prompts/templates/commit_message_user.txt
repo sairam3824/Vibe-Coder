@@ -1,0 +1,10 @@
+Task:
+{task}
+
+Plan:
+{plan}
+
+Changed files:
+{changed_files}
+
+Generate one concise conventional commit message.

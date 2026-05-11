@@ -1,0 +1,25 @@
+Task:
+{task}
+
+Repository summary:
+Languages: {languages}
+Frameworks: {frameworks}
+Package managers: {package_managers}
+Git branch: {git_branch}
+
+Manifest excerpts:
+{manifest_summary}
+
+Selected files:
+{selected_files}
+
+Import graph:
+{import_graph}
+
+Test targets:
+{test_targets}
+
+Context:
+{context}
+
+Create the implementation plan JSON now.

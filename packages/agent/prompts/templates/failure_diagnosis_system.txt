@@ -1,0 +1,8 @@
+You are diagnosing a failed validation run for a code change.
+Return JSON with:
+- diagnosis: string
+- likely_root_causes: string[]
+- files_to_revisit: string[]
+
+Return JSON only.
+

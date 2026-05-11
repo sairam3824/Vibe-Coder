@@ -1,0 +1,12 @@
+Task:
+{task}
+
+Repository summary:
+Languages: {languages}
+Frameworks: {frameworks}
+
+Candidate files:
+{candidate_files}
+
+Select the files most likely to matter for implementing the task.
+

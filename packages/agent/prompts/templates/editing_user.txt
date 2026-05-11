@@ -1,0 +1,14 @@
+Task:
+{task}
+
+Plan:
+{plan}
+
+Selected files:
+{selected_files}
+
+Current file context:
+{context}
+
+Generate the minimal set of file changes needed to complete the task.
+
