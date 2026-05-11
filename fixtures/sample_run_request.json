@@ -1,0 +1,12 @@
+{
+  "repo_path": "/absolute/path/to/repo",
+  "task": "add JWT auth to the FastAPI app and update tests",
+  "branch_name": "feat/jwt-auth",
+  "model": "anthropic/claude-3.7-sonnet",
+  "max_iterations": 3,
+  "command_profile": {
+    "name": "python",
+    "commands": ["pytest", "ruff check ."]
+  },
+  "dry_run": true
+}
