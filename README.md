@@ -1,5 +1,8 @@
 # Vibe Coder
 
+![Status: Stable](https://img.shields.io/badge/status-stable-green)
+![Version: 1.0.0](https://img.shields.io/badge/version-1.0.0-blue)
+
 Vibe Coder is a local-first autonomous AI coding agent platform. It accepts a natural-language coding task, inspects a target repository, plans changes, edits files, validates them inside Docker, retries on failures, and surfaces a run timeline with approvals, metrics, diffs, and commit artifacts.
 
 ## Architecture
