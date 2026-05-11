@@ -1,0 +1,51 @@
+Vibe Coder - How To Run
+
+1. Go to the project folder:
+cd /Users/sairammaruri/Desktop/new\ project/vibecoder
+
+2. Create your environment file:
+cp .env.example .env
+
+3. Edit .env and set:
+OPENROUTER_API_KEY=your_key_here
+
+4. Install backend dependencies:
+python -m pip install -e .
+
+5. Install frontend dependencies:
+cd apps/web
+npm install
+cd ../..
+
+6. Start the backend:
+python -m uvicorn apps.api.main:app --reload --host 0.0.0.0 --port 8000
+
+7. In a second terminal, start the frontend:
+cd /Users/sairammaruri/Desktop/new\ project/vibecoder/apps/web
+npm run dev -- --host 0.0.0.0 --port 5173
+
+8. Open the app:
+Frontend: http://localhost:5173
+Backend: http://localhost:8000
+
+Optional: use Make commands
+make install
+make api
+make web
+
+Optional: use Docker Compose
+docker compose up --build
+
+Useful checks
+pytest
+cd apps/web && npm run build
+curl http://localhost:8000/health
+
+Important note
+Always use:
+python -m uvicorn apps.api.main:app --reload --host 0.0.0.0 --port 8000
+
+Do not use plain:
+uvicorn apps.api.main:app ...
+
+Using python -m uvicorn prevents Python interpreter mismatch issues.
